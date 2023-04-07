@@ -6,77 +6,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0 auto;
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
 
-        div {
-            border: 5px dashed black;
-            background-color: greenyellow;
-            height: 200px;
-            width: 50%;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            overflow: scroll;
-            margin-bottom: 40px;
-            position: relative;
-            left: 50%;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .divdiv {
-            background-color: black;
-            width: 100px;
-            height: 300px;
-            margin-top: 40px;
-            position: static;
-            right: 50%;
-        }
 
-        .margin {
-            background-color: plum;
-            border: 5px dashed black;
-            text-align: center;
-        }
+.blah {
+    border: 5px dashed black;
+    background-color: greenyellow;
+    height: 200px;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    margin-bottom: 40px;
+    position: relative;
+    left: 50%;
+}
 
-        .x {
-            margin-top: 30px;
-            border: 5px dashed black;
-            background-color: lightseagreen;
-            height: 200px;
-            width: 100%;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
-            position: static;
-        }
+.divdiv {
+    background-color: black;
+    width: 100px;
+    height: 300px;
+    margin-top: 40px;
+}
 
-        .gra {
-            box-sizing: content-box;
-            background-color: black;
-            width: 100px;
-            height: 100px;
-            border-radius: 100px;
-            overflow: hidden;
-            margin: 0px 10px;
-            position: static;
-        }
+.margin {
+    background-color: plum;
+    border: 5px dashed black;
+    text-align: center;
+}
+
+.x {
+    margin-top: 30px;
+    border: 5px dashed black;
+    background-color: lightseagreen;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: static;
+}
+
+.gra {
+    box-sizing: content-box;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0px 10px;
+    position: static;
+}
+
+.stick, .zindex{
+    border: 5px solid black;
+    background-color: lightskyblue;
+    height: 2000px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.gr, .grow{
+    height: 200px;
+    margin: 30px;
+}
+
+.gr {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.grow {
+    box-sizing: border-box;
+    background-color: white;
+    border: 6px solid black;
+    position: sticky;
+    top: 0px;
+    opacity: 0.25;
+    border-radius: 30px;
+}
+
+.zindex {
+    height: 400px;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gr1, .gr2, .gr3 {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    display: inline;
+}
+
+.gr1{
+    position: relative;
+    z-index: 3;
+    left: 50px;
+}
+
+.gr2 {
+    background-color: crimson;
+    position: relative;
+    z-index: 2;
+}
+
+.gr3 {
+    background-color: bisque;
+    position: relative;
+    z-index: 1;
+    right: 75px;
+}
+
+.bottom-nav {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    height: 30px;
+    border: 5px solid black;
+    bottom: 0px;
+    position:fixed;
+    z-index: 4;
+    text-align: center;
+}
     </style>
 </head>
 
 <body>
-   <div>
+   <div class="blah">
     <div class="divdiv"></div>
-    </div>
+   </div>
+
     <p class="margin">H</p>
+
     <div class="x">
         <div class="gra"></div>
         <div class="gra"></div>
         <div class="gra"></div>
-        </div>
+    </div>
+
+    <div class="stick">
+        <div class="gr"></div>
+        <div class="grow"></div>
+        <div class="gr"></div>
+    </div>
+
+    <div class="zindex">
+        <div class="gr1"></div>
+        <div class="gr2"></div>
+        <div class="gr3"></div>
+    </div>
+
+    <div class="bottom-nav">
+        <p>Website under maintenance</p>
+    </div>
 </body>
 </html>
