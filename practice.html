@@ -140,6 +140,32 @@
     z-index: 4;
     text-align: center;
 }
+
+.float {
+    border: 5px solid black;
+    margin-top: 30px;
+    height: 1000px;
+    background-color: lemonchiffon;
+
+}
+
+.left, .right {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 0 25px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    position: sticky;
+    top: 0px;
+}
     </style>
 </head>
 
@@ -166,6 +192,11 @@
         <div class="gr1"></div>
         <div class="gr2"></div>
         <div class="gr3"></div>
+    </div>
+
+    <div class="float">
+        <div class="left"></div>
+        <div class="right"></div>
     </div>
 
     <div class="bottom-nav">
