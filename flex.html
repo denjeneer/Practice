@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Tutorial</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Flex container = parent */
+        ul{
+            margin: 0;
+            background-color: lightcoral;
+            padding: 20px;
+            /* display: inline-flex; */
+            display: inline-block;
+        }
+
+        /* Flex items = children */
+        li {
+            list-style: none;
+            color: black;
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 20px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Parent element -->
+    <!-- to make flexbox parent must be flex container -->
+    <ul>
+        <!-- Child elements -->
+        <!-- Children are automatically flex -->
+        <li>1st child element</li>
+        <li>2nd child element</li>
+        <li>3rd child element</li>
+        <li>4th child element</li>
+        <li>5th child element</li>
+    </ul>
+
+    <ul>
+        <!-- Child elements -->
+        <!-- Children are automatically flex -->
+        <li>1st child element</li>
+        <li>2nd child element</li>
+        <li>3rd child element</li>
+        <li>4th child element</li>
+        <li>5th child element</li>
+    </ul>
+</body>
+</html>
