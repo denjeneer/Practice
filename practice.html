@@ -8,7 +8,6 @@
     <style>
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0 auto;
     box-sizing: border-box;
 }
@@ -17,19 +16,19 @@ body {
     margin: 0 30px;
 }
 
+
 .blah {
     border: 5px dashed black;
     background-color: greenyellow;
     height: 200px;
-    width: 50%;
     align-items: center;
     display: flex;
     justify-content: center;
     overflow: scroll;
     margin-bottom: 40px;
-    position: relative;
-    left: 50%;
 }
+
+
 
 .divdiv {
     background-color: black;
@@ -69,7 +68,7 @@ body {
 
 .stick, .zindex{
     box-sizing: content-box;
-    border: 5px solid black;
+    border: 5px dashed black;
     background-color: lightskyblue;
     height: 2000px;
     margin-top: 40px;
@@ -135,14 +134,57 @@ body {
 
 .bottom-nav {
     box-sizing: border-box;
+<<<<<<< HEAD
     width: calc(100% - 60px);
+=======
+>>>>>>> e8975c53302e011a5918bec3dcdfd954f8d26f49
     background-color: white;
     height: 30px;
     border: 5px solid black;
     bottom: 0px;
     position:fixed;
     z-index: 4;
-    text-align: center;
+    width: calc(100% - 40px);
+}
+
+
+.float, .empty {
+    border: 5px solid black;
+    margin-top: 30px;
+    height: 1000px;
+    background-color: lemonchiffon;
+
+}
+
+.left, .right {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: 0 25px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    position: sticky;
+    top: 0px;
+}
+
+.top {
+    height: 500px;
+    background-color: aqua;
+    opacity: 0.35;
+}
+
+.bottom {
+    height: 500px;
+    background-color: brown;
+    opacity: 0.35;
+    bottom: 0;
 }
     </style>
 </head>
@@ -172,13 +214,27 @@ body {
         <div class="gr3"></div>
     </div>
 
+<<<<<<< HEAD
     <div class="floater">
+=======
+    <div class="float">
+>>>>>>> e8975c53302e011a5918bec3dcdfd954f8d26f49
         <div class="left"></div>
         <div class="right"></div>
     </div>
 
+<<<<<<< HEAD
+=======
+    <div class="empty">
+        <div class="top">
+            <div class="right"></div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+
+
+>>>>>>> e8975c53302e011a5918bec3dcdfd954f8d26f49
     <div class="bottom-nav">
-        <p>Website under maintenance</p>
     </div>
 </body>
 </html>
