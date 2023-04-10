@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 30px;
+}
 
 .blah {
     border: 5px dashed black;
@@ -88,7 +91,7 @@
     border: 6px solid black;
     position: sticky;
     top: 0px;
-    opacity: 0.25;
+    
     border-radius: 30px;
 }
 
@@ -104,13 +107,14 @@
     background-color: black;
     height: 100px;
     width: 100px;
-    box-shadow: 4px 4px grey;
+    box-shadow: 4px 4px 5px 2px  white;
+    border-radius: 50px;
 }
 
 .gr1{
     position: relative;
     z-index: 3;
-    left: 50px;
+    left: 65px;
     bottom: 30px;
 }
 
@@ -131,7 +135,7 @@
 
 .bottom-nav {
     box-sizing: border-box;
-    width: 100%;
+    width: calc(100% - 60px);
     background-color: white;
     height: 30px;
     border: 5px solid black;
@@ -166,6 +170,11 @@
         <div class="gr1"></div>
         <div class="gr2"></div>
         <div class="gr3"></div>
+    </div>
+
+    <div class="floater">
+        <div class="left"></div>
+        <div class="right"></div>
     </div>
 
     <div class="bottom-nav">
